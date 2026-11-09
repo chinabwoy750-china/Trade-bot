@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/data/providers/calendar_interface.py
+# hypothesis_version: 6.168.5
+
+['HIGH', 'HOLIDAY', 'LOW', 'MEDIUM']

@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/data/providers/finnhub.py
+# hypothesis_version: 6.168.5
+
+[6.0, 10.0, '+00:00', '1', '2', '3', 'Z', 'actual', 'category', 'currency', 'datetime', 'economicCalendar', 'estimate', 'event', 'finnhub', 'finnhub_news', 'forex', 'headline', 'high', 'id', 'impact', 'low', 'medium', 'prev', 'providers.finnhub', 'source', 'time', 'token', 'url']

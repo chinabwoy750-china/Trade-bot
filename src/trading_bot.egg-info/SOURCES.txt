@@ -1,0 +1,6 @@
+pyproject.toml
+src/trading_bot.egg-info/PKG-INFO
+src/trading_bot.egg-info/SOURCES.txt
+src/trading_bot.egg-info/dependency_links.txt
+src/trading_bot.egg-info/top_level.txt
+tests/test_phase1.py

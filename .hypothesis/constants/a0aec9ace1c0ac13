@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/core/mode.py
+# hypothesis_version: 6.168.5
+
+['LIVE_CONFIRM', 'MODE', 'TradingMode', 'backtest', 'demo', 'live']

@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/data/providers/forexfactory.py
+# hypothesis_version: 6.168.5
+
+[6.0, 10.0, 60.0, 'High', 'Holiday', 'Low', 'Medium', 'country', 'date', 'forecast', 'forexfactory', 'impact', 'previous', 'title']

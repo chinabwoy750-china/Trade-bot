@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/risk/manager.py
+# hypothesis_version: 6.168.5
+
+[-1.0, 0.0001, 0.6, 1.0, 1.001, 1.01, '%Y-%m-%d', '/', 'BTC', 'BUY', 'CONSECUTIVE_LOSS', 'ETH', 'SELL', 'SOL', 'System halt active', 'USD', '_', 'account_equity', 'action', 'cap', 'cap_usd', 'computed_quantity', 'crypto_positions', 'currency', 'current_exposure', 'current_risk', 'daily_orders_usd', 'entry', 'equity', 'error', 'existing_entry', 'forex_positions', 'limit', 'max_budget', 'max_pips', 'max_spread_pct', 'max_trade_usd', 'message', 'min_rr', 'net_usd', 'new_risk', 'nominal_usd', 'persistent_halt', 'proposed_quantity', 'proposed_trade', 'proposed_trade_usd', 'risk_distance', 'risk_pct', 'risk_usd', 'rr', 'spread', 'spread_pct', 'spread_pips', 'spread_ratio', 'stop_distance', 'stop_loss', 'symbol', 'take_profit', 'target_distance', 'total_positions']

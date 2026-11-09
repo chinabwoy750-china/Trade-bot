@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/config/loader.py
+# hypothesis_version: 6.168.5
+
+['DATABASE_URL', 'LOG_LEVEL', 'MODE', 'config', 'database', 'instruments.yaml', 'level', 'logging', 'mode', 'risk.yaml', 'settings.yaml', 'system', 'url', 'utf-8']

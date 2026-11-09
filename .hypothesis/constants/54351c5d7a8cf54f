@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/data/staleness.py
+# hypothesis_version: 6.168.5
+
+[300.0, 'D', 'D1', 'H1', 'H4', 'M15', 'data.staleness']

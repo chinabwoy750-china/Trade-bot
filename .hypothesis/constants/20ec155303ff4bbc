@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/decision/models.py
+# hypothesis_version: 6.168.5
+
+[0.8, 1.0, 1.5, 'BUY', 'DATA_STALE', 'HOLD', 'LIMIT', 'LOW_CONFIDENCE', 'MARKET', 'MARKET or LIMIT', 'NO_EDGE', 'OTHER', 'OUTSIDE_SESSION', 'RISK_LIMIT', 'SELL', 'TradeDecision', 'after']

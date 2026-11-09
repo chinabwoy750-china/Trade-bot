@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/storage/models.py
+# hypothesis_version: 6.168.5
+
+[128, 256, 'OPEN', 'daily_performance', 'decisions', 'default_state', 'orders', 'positions', 'risk_vetoes', 'system_state']

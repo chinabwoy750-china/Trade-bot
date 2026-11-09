@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/storage/repository.py
+# hypothesis_version: 6.168.5
+
+['%Y-%m-%d', 'action', 'confidence', 'created_at', 'cycle_id', 'default_state', 'details', 'entry_type', 'id', 'limit_price', 'proposed_action', 'quantity', 'reason', 'reason_code', 'reasoning', 'risk_reward', 'risk_usd', 'rule_name', 'stop_loss', 'symbol', 'take_profit', 'veto_reason', 'was_vetoed']

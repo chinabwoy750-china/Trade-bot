@@ -1,0 +1,42 @@
+# General System Settings
+system:
+  app_name: "AI Multi-Asset Trading Bot"
+  version: "1.0.0"
+  mode: "demo"  # demo | backtest | live
+  cycle_interval_minutes: 15
+  position_monitor_interval_seconds: 60
+  max_data_age_seconds: 300  # 5 minutes, else DATA_STALE
+  timezone: "UTC"
+
+forex_session:
+  # Forex weekend closure (UTC): Friday ~21:00 UTC to Sunday ~21:00 UTC
+  close_day_of_week: 4     # 0=Monday, 4=Friday
+  close_hour_utc: 21
+  close_minute_utc: 0
+  reopen_day_of_week: 6    # 6=Sunday
+  reopen_hour_utc: 21
+  reopen_minute_utc: 0
+
+decision_agent:
+  provider: "gemini"       # gemini | anthropic
+  model: "gemini-2.5-flash"
+  temperature: 0.1
+  timeout_seconds: 20
+  max_retries: 2
+  consecutive_hold_diagnostic_threshold: 4
+
+economic_calendar:
+  blackout_before_minutes: 30
+  blackout_after_minutes: 30
+  min_impact_level: "HIGH"
+
+logging:
+  level: "INFO"
+  log_dir: "logs"
+  rotation_max_bytes: 10485760  # 10 MB
+  backup_count: 5
+  json_format: true
+  console_output: true
+
+database:
+  url: "sqlite:///trading_bot.db"

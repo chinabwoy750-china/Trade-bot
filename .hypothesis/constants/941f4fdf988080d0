@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/data/indicators.py
+# hypothesis_version: 6.168.5
+
+[0.001, 0.5, 1.0, 1.5, 2.0, 3.0, 50.0, 100.0, 200, 'BEARISH', 'BULLISH', 'NEUTRAL']

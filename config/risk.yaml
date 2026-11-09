@@ -1,0 +1,32 @@
+# Deterministic Risk Management Configuration
+# Absolute veto layer over AI proposals
+
+limits:
+  max_risk_per_trade_pct: 0.01          # 1% of total equity
+  min_risk_per_trade_pct: 0.002         # Scale down to 0.2% on low confidence
+  max_open_positions_total: 6           # Max total positions across all assets
+  max_open_positions_forex: 4           # Max forex positions
+  max_open_positions_crypto: 3          # Max crypto positions
+  min_risk_reward_ratio: 1.5            # Reject any trade with R:R < 1.5
+  max_single_trade_usd: 10000.0         # Absolute dollar cap on a single position
+  max_daily_spend_usd: 50000.0          # Max cumulative capital allocated per day
+
+capital_allocation:
+  forex_budget_pct: 0.50                # 50% risk allocation to Forex/Gold
+  crypto_budget_pct: 0.50               # 50% risk allocation to Crypto Spot
+
+currency_exposure_caps:
+  # Net directional exposure cap per single currency (e.g. USD, EUR, JPY) as % of equity
+  max_net_currency_exposure_pct: 0.03   # 3% of equity
+  # Total crypto aggregate exposure cap as % of equity
+  max_crypto_total_exposure_pct: 0.20   # 20% of equity
+
+safety_halts:
+  global_daily_loss_limit_pct: 0.03     # 3% loss in a calendar day -> HALT all trading
+  max_consecutive_losses: 4             # 4 consecutive losses -> HALT and require manual review
+  killswitch_active: false              # Manual or programmatic emergency killswitch
+
+spread_and_slippage:
+  max_spread_to_stop_ratio: 0.20        # Reject if spread exceeds 20% of stop distance
+  max_forex_spread_pips: 4.0            # Rejects if major spread > 4 pips
+  max_crypto_spread_pct: 0.003          # Rejects if crypto spread > 0.3%

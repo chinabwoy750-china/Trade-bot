@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/risk/models.py
+# hypothesis_version: 6.168.5
+
+['KILLSWITCH_ACTIVE', 'MAX_CRYPTO_POSITIONS', 'MAX_FOREX_POSITIONS', 'MAX_TOTAL_POSITIONS', 'MIN_RR_VIOLATION', 'WIDEN_STOP_FORBIDDEN']

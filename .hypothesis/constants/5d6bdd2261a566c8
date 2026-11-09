@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/brokers/oanda.py
+# hypothesis_version: 6.168.5
+
+[2.0, 5.0, 10.0, 100, 200, 'AI Quant Bot', 'ALL', 'Authorization', 'Content-Type', 'D', 'D1', 'DEFAULT', 'GTC', 'H1', 'H4', 'LIMIT', 'M', 'M15', 'MARKET', 'NAV', 'PENDING', 'RFC3339', 'USD', 'XAU_USD', 'account', 'application/json', 'asks', 'averagePrice', 'balance', 'bids', 'brokers.oanda', 'c', 'candles', 'clientExtensions', 'comment', 'complete', 'count', 'currency', 'granularity', 'h', 'id', 'instrument', 'instruments', 'l', 'live', 'long', 'longUnits', 'marginAvailable', 'marginUsed', 'mid', 'o', 'oanda', 'order', 'orderFillTransaction', 'orders', 'positionFill', 'positions', 'practice', 'price', 'prices', 'short', 'shortUnits', 'state', 'stopLossOnFill', 'takeProfitOnFill', 'time', 'timeInForce', 'type', 'units', 'unrealizedPL', 'volume']

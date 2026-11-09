@@ -1,0 +1,7 @@
+{
+  "name": "AI Multi-Asset Trading Bot",
+  "description": "Production-quality, paper-trading-first automated trading system for Forex and Crypto with an AI decision agent and hard-coded risk management layer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

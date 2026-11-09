@@ -1,0 +1,228 @@
+# Instruments Configuration
+# Forex (~30 pairs + gold) & Crypto (~10 coins)
+
+forex:
+  # Majors
+  - symbol: "EUR_USD"
+    display_name: "EUR/USD"
+    base_currency: "EUR"
+    quote_currency: "USD"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "GBP_USD"
+    display_name: "GBP/USD"
+    base_currency: "GBP"
+    quote_currency: "USD"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "USD_JPY"
+    display_name: "USD/JPY"
+    base_currency: "USD"
+    quote_currency: "JPY"
+    pip_size: 0.01
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "USD_CHF"
+    display_name: "USD/CHF"
+    base_currency: "USD"
+    quote_currency: "CHF"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "AUD_USD"
+    display_name: "AUD/USD"
+    base_currency: "AUD"
+    quote_currency: "USD"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "USD_CAD"
+    display_name: "USD/CAD"
+    base_currency: "USD"
+    quote_currency: "CAD"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "NZD_USD"
+    display_name: "NZD/USD"
+    base_currency: "NZD"
+    quote_currency: "USD"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+
+  # Major Crosses
+  - symbol: "EUR_GBP"
+    display_name: "EUR/GBP"
+    base_currency: "EUR"
+    quote_currency: "GBP"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "EUR_JPY"
+    display_name: "EUR/JPY"
+    base_currency: "EUR"
+    quote_currency: "JPY"
+    pip_size: 0.01
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "GBP_JPY"
+    display_name: "GBP/JPY"
+    base_currency: "GBP"
+    quote_currency: "JPY"
+    pip_size: 0.01
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "AUD_JPY"
+    display_name: "AUD/JPY"
+    base_currency: "AUD"
+    quote_currency: "JPY"
+    pip_size: 0.01
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "EUR_CHF"
+    display_name: "EUR/CHF"
+    base_currency: "EUR"
+    quote_currency: "CHF"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "EUR_AUD"
+    display_name: "EUR/AUD"
+    base_currency: "EUR"
+    quote_currency: "AUD"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "GBP_AUD"
+    display_name: "GBP/AUD"
+    base_currency: "GBP"
+    quote_currency: "AUD"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "CAD_JPY"
+    display_name: "CAD/JPY"
+    base_currency: "CAD"
+    quote_currency: "JPY"
+    pip_size: 0.01
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "AUD_NZD"
+    display_name: "AUD/NZD"
+    base_currency: "AUD"
+    quote_currency: "NZD"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "CHF_JPY"
+    display_name: "CHF/JPY"
+    base_currency: "CHF"
+    quote_currency: "JPY"
+    pip_size: 0.01
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "EUR_CAD"
+    display_name: "EUR/CAD"
+    base_currency: "EUR"
+    quote_currency: "CAD"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "GBP_CAD"
+    display_name: "GBP/CAD"
+    base_currency: "GBP"
+    quote_currency: "CAD"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "NZD_JPY"
+    display_name: "NZD/JPY"
+    base_currency: "NZD"
+    quote_currency: "JPY"
+    pip_size: 0.01
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "AUD_CAD"
+    display_name: "AUD/CAD"
+    base_currency: "AUD"
+    quote_currency: "CAD"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+  - symbol: "CAD_CHF"
+    display_name: "CAD/CHF"
+    base_currency: "CAD"
+    quote_currency: "CHF"
+    pip_size: 0.0001
+    min_order_units: 1
+    broker: "oanda"
+
+  # Metals
+  - symbol: "XAU_USD"
+    display_name: "Gold (XAU/USD)"
+    base_currency: "XAU"
+    quote_currency: "USD"
+    pip_size: 0.01
+    contract_size: 1.0
+    min_order_units: 1
+    broker: "oanda"
+
+crypto:
+  # Spot Long-Only on Alpaca
+  - symbol: "BTC/USD"
+    display_name: "Bitcoin"
+    base_currency: "BTC"
+    quote_currency: "USD"
+    min_order_qty: 0.0001
+    broker: "alpaca"
+  - symbol: "ETH/USD"
+    display_name: "Ethereum"
+    base_currency: "ETH"
+    quote_currency: "USD"
+    min_order_qty: 0.001
+    broker: "alpaca"
+  - symbol: "SOL/USD"
+    display_name: "Solana"
+    base_currency: "SOL"
+    quote_currency: "USD"
+    min_order_qty: 0.01
+    broker: "alpaca"
+  - symbol: "XRP/USD"
+    display_name: "XRP"
+    base_currency: "XRP"
+    quote_currency: "USD"
+    min_order_qty: 1.0
+    broker: "alpaca"
+  - symbol: "ADA/USD"
+    display_name: "Cardano"
+    base_currency: "ADA"
+    quote_currency: "USD"
+    min_order_qty: 1.0
+    broker: "alpaca"
+  - symbol: "DOGE/USD"
+    display_name: "Dogecoin"
+    base_currency: "DOGE"
+    quote_currency: "USD"
+    min_order_qty: 10.0
+    broker: "alpaca"
+  - symbol: "LINK/USD"
+    display_name: "Chainlink"
+    base_currency: "LINK"
+    quote_currency: "USD"
+    min_order_qty: 0.1
+    broker: "alpaca"
+  - symbol: "AVAX/USD"
+    display_name: "Avalanche"
+    base_currency: "AVAX"
+    quote_currency: "USD"
+    min_order_qty: 0.1
+    broker: "alpaca"
+  - symbol: "LTC/USD"
+    display_name: "Litecoin"
+    base_currency: "LTC"
+    quote_currency: "USD"
+    min_order_qty: 0.01
+    broker: "alpaca"

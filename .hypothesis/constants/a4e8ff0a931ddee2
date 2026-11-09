@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/brokers/alpaca.py
+# hypothesis_version: 6.168.5
+
+[2.0, 5.0, 10.0, 100, 200, 204, '+00:00', '-', '/', '15Min', '1Day', '1Hour', '4Hour', 'APCA-API-KEY-ID', 'APCA-API-SECRET-KEY', 'Content-Type', 'D1', 'H1', 'H4', 'M15', 'USD', 'Z', 'active', 'alpaca', 'alpaca_paper', 'ap', 'application/json', 'asset_class', 'avg_entry_price', 'bp', 'brokers.alpaca', 'buy', 'buying_power', 'c', 'cash', 'client_order_id', 'crypto', 'currency', 'current_price', 'equity', 'filled', 'filled_avg_price', 'filled_qty', 'gtc', 'h', 'id', 'l', 'limit', 'limit_price', 'long', 'market', 'o', 'open', 'paper', 'partially_filled', 'pending', 'qty', 'quotes', 'sell', 'side', 'status', 'stop_loss', 'stop_price', 'symbol', 'symbols', 't', 'time_in_force', 'timeframe', 'tradable', 'type', 'unrealized_pl', 'v']

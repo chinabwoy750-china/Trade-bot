@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/core/time_utils.py
+# hypothesis_version: 6.168.5
+
+['(\\.\\d{6})\\d+', '+00:00', 'Z', '\\1']

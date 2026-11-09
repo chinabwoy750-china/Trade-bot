@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/data/cache.py
+# hypothesis_version: 6.168.5
+
+[300.0, 500, 'inf']

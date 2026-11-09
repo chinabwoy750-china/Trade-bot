@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/core/logger.py
+# hypothesis_version: 6.168.5
+
+[1024, 'INFO', '\\1=[REDACTED]', 'exception', 'extra_fields', 'level', 'line', 'logger', 'logs', 'message', 'module', 'timestamp', 'trading_bot.log', 'utf-8']

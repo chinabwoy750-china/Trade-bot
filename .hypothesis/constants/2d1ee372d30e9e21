@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/data/providers/cryptopanic.py
+# hypothesis_version: 6.168.5
+
+[10.0, '+00:00', ',', '/USD', 'Z', '_USD', 'auth_token', 'bearish', 'bullish', 'code', 'cryptopanic', 'cryptopanic_feed', 'currencies', 'disliked', 'domain', 'id', 'liked', 'negative', 'positive', 'public', 'published_at', 'results', 'title', 'true', 'url', 'votes']

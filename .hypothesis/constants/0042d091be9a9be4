@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/brokers/models.py
+# hypothesis_version: 6.168.5
+
+[2.0, 'BUY', 'CANCELLED', 'CRYPTO', 'DAY', 'FILLED', 'FOK', 'FOREX', 'GTC', 'IOC', 'LIMIT', 'MARKET', 'METAL', 'PARTIALLY_FILLED', 'PENDING', 'REJECTED', 'SELL', 'STOP', 'USD']

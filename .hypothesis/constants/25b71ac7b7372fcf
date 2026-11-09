@@ -1,0 +1,4 @@
+# file: /app/applet/trading_bot/decision/parser.py
+# hypothesis_version: 6.168.5
+
+[120, '<\\s*script', 'action', 'decision.parser', 'external_text', 'flag', 'item', 'news_feed', 'preview', 'reason_code', 'source', 'sudo\\s+', 'system\\s*prompt', '{', '}']

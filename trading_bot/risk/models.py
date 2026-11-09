@@ -1,0 +1,42 @@
+"""Domain models, veto reasons, and validation containers for the risk layer."""
+
+from enum import Enum
+from typing import Any
+
+from pydantic import BaseModel, Field
+
+
+class RiskVetoReason(str, Enum):
+    """Enumeration of all deterministic risk veto rules."""
+    KILLSWITCH_ACTIVE = "KILLSWITCH_ACTIVE"
+    GLOBAL_DAILY_LOSS_HALT = "GLOBAL_DAILY_LOSS_HALT"
+    CONSECUTIVE_LOSS_HALT = "CONSECUTIVE_LOSS_HALT"
+    INVALID_STOP_PLACEMENT = "INVALID_STOP_PLACEMENT"
+    MIN_RR_VIOLATION = "MIN_RR_VIOLATION"
+    SPREAD_EXCEEDS_STOP_RATIO = "SPREAD_EXCEEDS_STOP_RATIO"
+    EXCESSIVE_FOREX_SPREAD = "EXCESSIVE_FOREX_SPREAD"
+    EXCESSIVE_CRYPTO_SPREAD = "EXCESSIVE_CRYPTO_SPREAD"
+    MAX_TOTAL_POSITIONS = "MAX_TOTAL_POSITIONS"
+    MAX_FOREX_POSITIONS = "MAX_FOREX_POSITIONS"
+    MAX_CRYPTO_POSITIONS = "MAX_CRYPTO_POSITIONS"
+    FOREX_RISK_BUDGET_EXCEEDED = "FOREX_RISK_BUDGET_EXCEEDED"
+    CRYPTO_RISK_BUDGET_EXCEEDED = "CRYPTO_RISK_BUDGET_EXCEEDED"
+    CURRENCY_EXPOSURE_CAP_EXCEEDED = "CURRENCY_EXPOSURE_CAP_EXCEEDED"
+    CRYPTO_AGGREGATE_EXPOSURE_CAP_EXCEEDED = "CRYPTO_AGGREGATE_EXPOSURE_CAP_EXCEEDED"
+    MAX_TRADE_SIZE_EXCEEDED = "MAX_TRADE_SIZE_EXCEEDED"
+    DAILY_SPEND_LIMIT_EXCEEDED = "DAILY_SPEND_LIMIT_EXCEEDED"
+    MIN_ORDER_SIZE_VIOLATION = "MIN_ORDER_SIZE_VIOLATION"
+    WIDEN_STOP_FORBIDDEN = "WIDEN_STOP_FORBIDDEN"
+    AVERAGING_DOWN_FORBIDDEN = "AVERAGING_DOWN_FORBIDDEN"
+    CRYPTO_SPOT_LONG_ONLY = "CRYPTO_SPOT_LONG_ONLY"
+    PROPOSED_QTY_EXCEEDS_RISK = "PROPOSED_QTY_EXCEEDS_RISK"
+
+
+class RiskCheckResult(BaseModel):
+    """Outcome of risk manager evaluation on a proposed trade."""
+    is_approved: bool
+    veto_reason: RiskVetoReason | None = None
+    reason_message: str | None = None
+    approved_quantity: float = 0.0
+    calculated_risk_usd: float = 0.0
+    details: dict[str, Any] = Field(default_factory=dict)
